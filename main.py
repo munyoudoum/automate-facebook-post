@@ -62,7 +62,7 @@ def update_post_data(post_id, message):
 def main():
     post_data = get_post_data(FACEBOOK_POST_ID)
     print(post_data)
-    shares = post_data["shares"]["count"]
+    shares = post_data["shares"]["count"] if "shares" in post_data else 0
     comments = post_data["comments"]["summary"]["total_count"]
     reactions = post_data["reactions"]["summary"]["total_count"]
     message = (
