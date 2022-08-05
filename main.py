@@ -58,7 +58,7 @@ def update_post_data(post_id, message):
     return response.json()
 
 
-@sched.scheduled_job("interval", minutes=3)
+@sched.scheduled_job("interval", minutes=2)
 def main():
     post_data = get_post_data(FACEBOOK_POST_ID)
     print(post_data)
