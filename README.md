@@ -1,5 +1,7 @@
 # Automate Facebook Post
 
+## Youtube video: https://www.youtube.com/watch?v=3HvzgDzrG0c
+
 ## Generating a never expiring Facebook token
 1. Go to https://developers.facebook.com/tools/debug/accesstoken/
 2. Input your short lived token
