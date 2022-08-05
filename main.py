@@ -43,7 +43,7 @@ def get_post_data(post_id):
     response = requests.get(
         FACEBOOK_API + f"/{post_id}",
         params={
-            "fields": "reactions.summary(total_count),comments.summary(total_count),shares",
+            "fields": "reactions.summary(total_count),comments.filter(stream).summary(total_count),shares",
             "access_token": FACEBOOK_ACCESS_TOKEN,
         },
     )
@@ -74,5 +74,5 @@ def main():
     print(update_post_data(FACEBOOK_POST_ID, message))
 
 
-# main()
-sched.start()
+main()
+# sched.start()
