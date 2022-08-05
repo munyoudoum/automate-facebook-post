@@ -74,5 +74,5 @@ def main():
     print(update_post_data(FACEBOOK_POST_ID, message))
 
 
-main()
-# sched.start()
+# main()
+sched.start()
