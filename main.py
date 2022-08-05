@@ -69,6 +69,7 @@ def main():
         f"{reactions} REACTIONS, {comments} COMMENTS, {shares} SHARES\n\n"
         "If you REACT, COMMENT, or SHARE"
         " on this post, It will be updated automatically a few minutes later!"
+        "\n\nCheckout https://youtu.be/3HvzgDzrG0c on how this works!"
     )
     print(update_post_data(FACEBOOK_POST_ID, message))
 
